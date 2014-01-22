@@ -7,10 +7,12 @@ DatabaseCleaner.strategy = :truncation
 
 DatabaseCleaner.clean
 
-9.times do
+FactoryGirl.create :admin
+
+12.times do
   FactoryGirl.create :contacto
 end
 
-6.times do
+12.times do
   FactoryGirl.create :servicio
 end
