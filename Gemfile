@@ -36,7 +36,9 @@ gem "capistrano"
 
 # To use debugger
 # gem 'debugger'
-
+group :test do
+  gem 'cucumber-rails', :require => false
+end
 gem "bootstrap-sass", "~> 3.0.2.1"
 gem "sass-rails", "~> 3.2.6"
 gem "compass-rails", :group => :assets

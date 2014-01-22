@@ -20,3 +20,6 @@ production:
   host: localhost
   database: jemimagen_production
   <<: *defaults
+
+cucumber:
+  <<: *test
