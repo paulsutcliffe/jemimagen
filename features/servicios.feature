@@ -18,7 +18,7 @@ Escenario: Editar Servicio
   Cuando hago click en "Servicios"
   Y hago click en "Editar"
   Y uso el nombre "Nuevo servicio"
-  Y uso la foto "foto_servicio.jpg"
+  Y uso la foto "foto_servicio2.jpg"
   Cuando presiono "Guardar"
   Entonces debería ver "El servicio se ha editado con éxito"
 
