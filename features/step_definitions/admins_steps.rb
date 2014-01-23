@@ -23,7 +23,7 @@ Cuando(/^presiono "(.*?)"$/) do |boton|
   click_button(boton)
 end
 
-Entonces(/^debería ver "(.*?)"$/) do |arg1|
+Entonces(/^debería ver "(.*?)"$/) do |resultado|
   page.should have_content(resultado)
 end
 

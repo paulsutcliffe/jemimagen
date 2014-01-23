@@ -20,7 +20,7 @@ Escenario: Editar Servicio
   Y uso el nombre "Nuevo servicio"
   Y uso la foto "foto_servicio2.jpg"
   Cuando presiono "Guardar"
-  Entonces debería ver "El servicio se ha editado con éxito"
+  Entonces debería ver "El servicio se ha editado"
 
 Escenario: Eliminar Servicio
   Dado que existe un servicio

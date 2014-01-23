@@ -16,13 +16,11 @@
             %th Foto
             %th
             %th
-            %th
 
           - @servicios.each do |servicio|
             %tr
               %td= servicio.nombre
-              %td= servicio.foto
-              %td= link_to 'Ver', servicio, class: 'btn btn-info'
+              %td= image_tag servicio.foto_url(:thumb)
               - if current_admin
                 %td= link_to 'Editar', edit_servicio_path(servicio), class: 'btn btn-success'
                 %td= link_to 'Eliminar', servicio, :method => :delete, :data => { :confirm => '¿Estás Seguro?' }, class: 'btn btn-danger'

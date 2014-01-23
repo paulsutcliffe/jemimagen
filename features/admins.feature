@@ -1,4 +1,5 @@
 #language: es
+@javascript
 Característica: administracíon de los contenidos de la web
 
 Escenario: Ingresar como administrador
@@ -13,4 +14,4 @@ Escenario:
   Dado que he iniciado sesión como administrador
   Y que estoy en la página inicial
   Cuando hago click en "Cerrar Sesión"
-  Entonces debería ver "Has ceraddo la sesión."
+  Entonces debería ver "Has cerrado la sesión."
