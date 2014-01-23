@@ -1,5 +1,4 @@
 #language: es
-@javascript
 Característica: Envio de mensaje desde la web
 
 Escenario: Enviar mensaje
@@ -7,7 +6,7 @@ Escenario: Enviar mensaje
   Y hago click en "Contacto"
   Y lleno el formulario de contacto con los datos del mensaje
   Cuando presiono "Enviar"
-  Entonces debería ver "Tu mensaje fue enviado con éxito"
+  Entonces debería ver "Tu mensaje fue enviado con éxito."
 
 Escenario: Eliminar mensajes como administrador
   Dado que existe un mensaje
