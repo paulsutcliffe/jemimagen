@@ -7,7 +7,11 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      = link_to 'Jem Imagen', root_path, class: 'navbar-brand'
+      = link_to image_tag (image_path ('jem-logo.png')), class: 'navbar-brand'
     .collapse.navbar-collapse
       %ul.nav.navbar-nav
         = render 'layouts/navigation_links'
+    .social-header
+      = link_to image_tag(image_path('facebook-header.png')), class: 'fb-logo-header'
+      = link_to image_tag(image_path('mail-header.png')), class: 'mail-logo-header'
+      
