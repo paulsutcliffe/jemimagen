@@ -1,17 +1,16 @@
 - page_title!('Creando contacto')
 
 #region-contactos.container
-
-  .region
-    .region-title
-      %h1
-        Creando
-        %b
-          contacto
-
-  .region
+  .linea
+  .region-general
+    %h2.titulo-general
+      contacto  
+    %p.texto-generl
+      Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+      Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+  .clear
+  .region-contactos
     = render 'form'
 
   .region
     .admin-controls
-      = link_to 'Regresar', 'javascript:history.back(-1)', class: 'btn btn-warning'

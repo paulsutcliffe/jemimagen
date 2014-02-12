@@ -1,21 +1,27 @@
 .container
   
   .region-footer
-    %ul
-      %li
-        = image_tag image_path('footer-cel.png')
-        %span
-          986134697
-      %li
-        = link_to image_tag image_path('footer-fb.png')
-        %span
-          fb.com
-      %li
-        = image_tag image_path('footer-mail.png')
-        = mail_to 'info@jemimagen.com'
-
-  .region-titulo
-    Jem Imagen | Todos los derechos reservados 2014
+    %table.table
+      %tr
+        %td.img-footer
+          = image_tag image_path('footer-cel.png')
+        %td.info-footer
+          %span
+            986134697
+      %tr
+        %td.img-footer
+          = link_to image_tag image_path('footer-fb.png')
+        %td.info-footer
+          %span
+            fb.com
+      %tr
+        %td.img-footer
+          = image_tag image_path('footer-mail.png')
+        %td.info-footer
+          = mail_to 'info@jemimagen.com'
+    .clear
+    .region-titulo
+      Jem Imagen | Todos los derechos reservados 2014
 
           
     

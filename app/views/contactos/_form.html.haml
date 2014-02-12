@@ -5,22 +5,19 @@
       %ul
         - @contacto.errors.full_messages.each do |msg|
           %li= msg
-
-  .form-group
-    = f.label :nombre, class: 'col-sm-2 control-label'
-    .col-sm-10
+  .form-group-1
+    .form-group
+      = f.label :nombre, class: 'control-label'
       = f.text_field :nombre, class: 'form-control'
-  .form-group
-    = f.label :email, "E-mail", class: 'col-sm-2 control-label'
-    .col-sm-10
+    .form-group
+      = f.label :email, "E-mail", class: 'control-label'
       = f.text_field :email, class: 'form-control'
-  .form-group
-    = f.label :telefono, "Teléfono", class: 'col-sm-2 control-label'
-    .col-sm-10
+    .form-group
+      = f.label :telefono, "Teléfono", class: 'control-label'
       = f.text_field :telefono, class: 'form-control'
-  .form-group
-    = f.label :mensaje, class: 'col-sm-2 control-label'
-    .col-sm-10
-      = f.text_area :mensaje, class: 'form-control'
+  .form-group-2
+    .form-group
+      = f.label :mensaje, class: 'control-label'
+      = f.text_area :mensaje, class: 'form-control', rows: '9'
   .actions
-    = f.submit 'Enviar', class: 'btn btn-default'
+    = f.submit 'ENVIAR', class: 'btn btn-default'
