@@ -31,13 +31,13 @@
 }
 .title-inicio{
 @extend .col-md-4;
-@extend .col-xs-4;
+@extend .col-xs-12;
 @extend .col-lg-4;
 @extend .col-sm-4;
 }
 .texto-inicio{
 @extend .col-md-8;
-@extend .col-xs-8;
+@extend .col-xs-12;
 @extend .col-lg-8;
 @extend .col-sm-8;
 
@@ -57,39 +57,55 @@ footer{
 }
 .region-servicios{
 @extend .col-md-12;
-@extend .col-xs-12;
 @extend .col-lg-12;
 @extend .col-sm-12;
+@extend .col-xs-12;
 
 }
 .servicio{
 @extend .col-md-4;
-@extend .col-xs-6;
 @extend .col-lg-2;
 @extend .col-sm-4;
-
+@extend .col-xs-6;
 }
+
+@media (min-width: 0px) and (max-width: 359px){
+  .servicio{
+  width: 100%;
+  }
+}
+@media(max-width: 767px){
+  .informacion{ margin-bottom:20px !important; }
+  .form-group{margin:10px auto !important; }
+  .region-gerente{top:100px !important; .quotes{font-size: 20px;}}
+}
+
 
 .region-contactos{
 @extend .col-md-8;
-@extend .col-xs-8;
+@extend .col-xs-12;
 @extend .col-lg-8;
-@extend .col-sm-8;
+@extend .col-sm-10;
 @extend .col-md-offset-4;
-@extend .col-xs-offset-6;
 @extend .col-lg-offset-2;
-@extend .col-sm-offset-4;
+@extend .col-sm-offset-2;
 }
 .form-group-1{
 @extend .col-md-6;
-@extend .col-xs-6;
+@extend .col-xs-12;
 @extend .col-lg-6;
 @extend .col-sm-6;
 
 }
 .form-group-2{
 @extend .col-md-6;
-@extend .col-xs-6;
+@extend .col-xs-12;
 @extend .col-lg-6;
 @extend .col-sm-6;
+}
+.informacion{
+@extend .col-md-4;
+@extend .col-xs-12;
+@extend .col-lg-4;
+@extend .col-sm-4;
 }

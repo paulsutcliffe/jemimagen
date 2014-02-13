@@ -1,17 +1,18 @@
 -# navigation styled for Bootstrap 3.0
 %nav.navbar.navbar-default.navbar-fixed-top
   .container
+    .logo  
+      = link_to image_tag (image_path ('jem-logo.png')), class: 'navbar-brand'
     .navbar-header
       %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
         %span.sr-only Toggle navigation
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      = link_to image_tag (image_path ('jem-logo.png')), class: 'navbar-brand'
-    .collapse.navbar-collapse
-      %ul.nav.navbar-nav
-        = render 'layouts/navigation_links'
     .social-header
       = link_to image_tag(image_path('facebook-header.png')), class: 'fb-logo-header'
       = link_to image_tag(image_path('mail-header.png')), class: 'mail-logo-header'
+    .collapse.navbar-collapse
+      %ul.nav.navbar-nav
+        = render 'layouts/navigation_links'
       
