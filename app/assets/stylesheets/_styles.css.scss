@@ -6,9 +6,11 @@ border-bottom: 7px solid $green;
 padding: 20px 0px ;
 background-color:white;
 }
+.navbar-toggle{color: $light-gray;}
+.icon-bar{margin: 4px auto;text-align: center;}
 .nav > li{display:block; text-align:center; height: 40px;}
 .navbar-header{
-width: 70px;
+width: 60%;
 }
 .nav.navbar-nav{
   margin-right: auto;
