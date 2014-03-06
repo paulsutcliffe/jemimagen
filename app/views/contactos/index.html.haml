@@ -5,10 +5,6 @@
       %h1= page_title!('contactos')
 
     .region
-      - if current_admin
-        .admin-control
-          = link_to 'Crear Contacto', new_contacto_path, class: 'btn btn-primary'
-
       .table-responsive
         %table.table
           %tr

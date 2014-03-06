@@ -16,3 +16,7 @@ end
 12.times do
   FactoryGirl.create :servicio
 end
+
+10.times do
+  FactoryGirl.create :cliente
+end
