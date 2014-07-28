@@ -6,12 +6,14 @@ border-bottom: 7px solid $green;
 padding: 20px 0px ;
 background-color:white;
 }
+
 .navbar-toggle{color: $light-gray;}
 .icon-bar{margin: 4px auto;text-align: center;}
 .nav > li{display:block; text-align:center; height: 40px;}
 .navbar-header{
 width: 60%;
 }
+
 .nav.navbar-nav{
   margin-right: auto;
   margin-left:auto;
@@ -85,6 +87,8 @@ text-align: right;
   }
 }
 .img-responsive{width: 100%; min-width:100%;}
+
+
 /*INICIO*/
 #region-inicio .gerente{background:url(/assets/img-index-5.jpg); height: 500px;}
 #region-inicio{
